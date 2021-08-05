@@ -31,9 +31,9 @@ body {
 
 <div class="topnav">
   <a href="#">Log in / Sign up</a>
-  <a href="#">Make a new blog</a>
-  <a href="#">Search blog</a>
-  <a href="#">Random blog</a>
+  <a href="#">Create a new blog</a>
+  <a href="#">Search for a blog</a>
+  <a href="#">Any random blog</a>
 </div>
 
 <div class="row">
