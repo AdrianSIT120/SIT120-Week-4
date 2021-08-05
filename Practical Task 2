@@ -1,1 +1,50 @@
+--------------HTML--------------
 
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+<div id="testng01">
+  <span v-if="seen">We should be able to see this text.</span>
+</div>
+
+<div id="testng02">
+  <span v-if="seen">We should not be able to see this text.</span>
+</div>
+
+<div id="testing03">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
+
+
+
+
+--------------JS--------------
+
+var testng01 = new Vue({
+  el: '#testng01',
+  data: {
+    seen: true
+  }
+})
+
+var testng21 = new Vue({
+  el: '#testng02',
+  data: {
+    seen: false
+  }
+})
+
+var testing03 = new Vue({
+  el: '#testing03',
+  data: {
+    todos: [
+      { text: 'Finish SIT120 assignment 01' },
+      { text: 'Finish SIT120 assignment 02' },
+      { text: 'Finish SIT120 assignment 03' }
+    ]
+  }
+})
